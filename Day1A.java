@@ -4,15 +4,21 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Day2 {
+public class Day1A {
 
 	public static void main(String[] args) {
 		
-	//path 
+	
+		
+	// path of googleChrome
+		
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\ritak\\Downloads\\chromedriver\\chromedriver\\chromedriver.exe");
 		ChromeDriver dr = new ChromeDriver();
+	
+	// path of Swag Labs
 		
 		dr.get("https://www.saucedemo.com/");
+		
 		
 		WebElement UserName = dr.findElement(By.cssSelector("#user-name"));
 		

@@ -7,30 +7,66 @@ import org.openqa.selenium.chrome.ChromeDriver;
 public class Day2A {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
-		System.setProperty("webdriver.chrome.driver", "C:\\Users\\ritak\\Downloads\\chromedriver\\chromedriver\\chromedriver.exe");
+		
+		// WebElement methods 
+		   
+		
+		System.getProperty("webdriver.chrome.driver","C:\\Users\\ritak\\Downloads\\chromedriver\\chromedriver\\chromedriver.exe");
+		
 		ChromeDriver dr = new ChromeDriver();
 		
-		dr.get("https://www.saucedemo.com/");
 		
-		WebElement username = dr.findElement(By.cssSelector("#user-name"));
-		WebElement password = dr.findElement(By.cssSelector("#password"));
-		WebElement login = dr.findElement(By.cssSelector("#login-button"));
+		// program 1
 		
-		username.sendKeys("standard_user");
-		password.sendKeys("secret_sauce");
-		login.click();
 		
-		WebElement heading = dr.findElement(By.cssSelector("#header_container > div.primary_header > div.header_label > div"));
+		// sendKeys();
 		
-		if(heading.isDisplayed()) {
-			System.out.println("Test case passed");
-		}
-		else 
-		{
-			System.out.println("Test case failed");
-		}
+		
+		dr.get("https://www.webdriveruniversity.com/Contact-Us/contactus.html");
+		
+		
+//		WebElement first_name = dr.findElement(By.cssSelector("#contact_form > input:nth-child(1)"));
+		
+//		first_name.sendKeys("Rita");
+		
+		 
+		// click   (Find elements)
+		
+		
+		WebElement first_name = dr.findElement(By.cssSelector("#contact_form > input:nth-child(1)"));
+		WebElement last_name = dr.findElement(By.cssSelector("#contact_form > input:nth-child(2)"));
+		WebElement email_address = dr.findElement(By.cssSelector("#contact_form > input:nth-child(3)"));
+		WebElement message = dr.findElement(By.cssSelector("#contact_form > textarea"));
+		WebElement reset_button = dr.findElement(By.cssSelector("#form_buttons > input:nth-child(1)"));
+		
+		// Writing on it 
+		
+		first_name.sendKeys("Rita");
+		last_name.sendKeys("Khatiwoda");
+		email_address.sendKeys("ritakhatiwoda50@gmail.com");
+		message.sendKeys("I am learning Selenium");
+		
+		// 	click button
+		//	reset_button.click();
+		
+		// clear method():
+		
+
+		WebElement first_name1 = dr.findElement(By.cssSelector("#contact_form > input:nth-child(1)"));
+		//		first_name.sendKeys("Rita");
+		// 		firstName.clear	
+		
+		
+		
+		// get text method()
+		
+		
+		WebElement heading = dr.findElement(By.cssSelector("#contact_me > div > div:nth-child(1) > div > h2"));
+		
+		String text = heading.getText();
+		System.out.println(text);
+		
+		
 		
 	}
 
