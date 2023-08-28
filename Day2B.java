@@ -69,7 +69,7 @@ public class Day2B {
 		
 		
 	
-	
+	        
 	
 	}
 
