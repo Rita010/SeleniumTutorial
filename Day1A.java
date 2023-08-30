@@ -13,25 +13,25 @@ public class Day1A {
 	// path of googleChrome
 		
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\ritak\\Downloads\\chromedriver\\chromedriver\\chromedriver.exe");
-		ChromeDriver dr = new ChromeDriver();
+		ChromeDriver driver = new ChromeDriver();
 	
 	// path of Swag Labs
 		
-		dr.get("https://www.saucedemo.com/");
+		driver.get("https://www.saucedemo.com/");
 		
 		
-		WebElement UserName = dr.findElement(By.cssSelector("#user-name"));
+		WebElement UserName = driver.findElement(By.cssSelector("#user-name"));
 		
-		WebElement Password = dr.findElement(By.cssSelector("#password"));
+		WebElement Password = driver.findElement(By.cssSelector("#password"));
 		
-		WebElement Login = dr.findElement(By.cssSelector("#login-button"));
+		WebElement Login = driver.findElement(By.cssSelector("#login-button"));
 		
 		
 		UserName.sendKeys("standard_user");
 		Password.sendKeys("secret_sauce");
 		Login.click();
 		
-		WebElement heading = dr.findElement(By.cssSelector("#header_container > div.header_secondary_container > span "));
+		WebElement heading = driver.findElement(By.cssSelector("#header_container > div.header_secondary_container > span "));
 		
 		if(heading.isDisplayed()) {
 			System.out.println("Test case passed");

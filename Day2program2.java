@@ -4,24 +4,24 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class Day2B {
+public class Day2program2 {
 
 	public static void main(String[] args) {
 		
 		
-		System.getProperty("webdriver.chrome.driver","C:\\Users\\ritak\\Downloads\\chromedriver\\chromedriver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\ritak\\Downloads\\chromedriver\\chromedriver\\chromedriver.exe");
 		
 		
-		ChromeDriver dr = new ChromeDriver();
+		ChromeDriver driver = new ChromeDriver();
 		
-		dr.get("https://www.webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html");
+		driver.get("https://www.webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html");
 
 		
 		// is displayed method()
 		// B1 ----- true
 		
 		
-		WebElement heading = dr.findElement(By.cssSelector("#main-header > h1"));
+		WebElement heading = driver.findElement(By.cssSelector("#main-header > h1"));
 		
 		
 		boolean B1 = heading.isDisplayed();
@@ -32,7 +32,7 @@ public class Day2B {
 		// B2 ----- true
 		
 		
-		WebElement lettuceRB = dr.findElement(By.cssSelector("#radio-buttons-selected-disabled > input[type=radio]:nth-child(1)"));
+		WebElement lettuceRB = driver.findElement(By.cssSelector("#radio-buttons-selected-disabled > input[type=radio]:nth-child(1)"));
 		
 		boolean B2 = lettuceRB.isEnabled();
 		System.out.println(B2);
@@ -40,7 +40,7 @@ public class Day2B {
 		
 		// B3 ----- true
 		
-		WebElement pumpkinRB = dr.findElement(By.cssSelector("#radio-buttons-selected-disabled > input[type=radio]:nth-child(5)"));
+		WebElement pumpkinRB = driver.findElement(By.cssSelector("#radio-buttons-selected-disabled > input[type=radio]:nth-child(5)"));
 																				
 		boolean B3 = pumpkinRB.isEnabled();
 		System.out.println(B3);
@@ -49,7 +49,7 @@ public class Day2B {
 		// B4 ------ false
 		
 		
-		WebElement cabbageRB = dr.findElement(By.cssSelector("#radio-buttons-selected-disabled > input[type=radio]:nth-child(3)"));
+		WebElement cabbageRB = driver.findElement(By.cssSelector("#radio-buttons-selected-disabled > input[type=radio]:nth-child(3)"));
 		
 		boolean B4 = cabbageRB.isEnabled();
 		System.out.println(B4);
@@ -60,7 +60,7 @@ public class Day2B {
 		// is selected method()
 		// to check if the object is selected or not (pumpkinRBsc: pumpkinRadioButtonSelected).... if pumpkin is selected answer will be true
 		
-		WebElement pumpkinRBsc = dr.findElement(By.cssSelector("#radio-buttons-selected-disabled > input[type=radio]:nth-child(5)"));
+		WebElement pumpkinRBsc = driver.findElement(By.cssSelector("#radio-buttons-selected-disabled > input[type=radio]:nth-child(5)"));
 		boolean B5 = pumpkinRBsc.isSelected();					
 		System.out.println(B5);
 		
