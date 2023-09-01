@@ -58,7 +58,7 @@ public class Day2program1 {
 		
 		
 		
-		// get text method()
+		// getText method()
 		
 		
 		WebElement heading = driver.findElement(By.cssSelector("#contact_me > div > div:nth-child(1) > div > h2"));
