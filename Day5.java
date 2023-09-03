@@ -85,7 +85,7 @@ public class Day5 {
 //		}
 		
 	
-// Test case 4 .... to check whter particular product is available or not
+// Test case 4 .... to check whether particular product is available or not
 	
 		
 		String expectedProduct = "Sauce Labs Bolt T-Shirt";
@@ -100,7 +100,7 @@ public class Day5 {
 		login.click();
 		
 		List<WebElement>items = driver.findElements(By.cssSelector(".inventory_item_name"));
-		
+																			
 		boolean productFound = false;
 		for(int i = 0; i < items.size(); i++) {
 		// System.out.println(items.get(i).getText());   // shows all the 6 products
