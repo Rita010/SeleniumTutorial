@@ -10,9 +10,10 @@ public class examPrac1 {
 
 		//Arrangement
 		//Action
-		//Assertion - validation for an application
-		
-		System.setProperty("ChromeDriver.Driver.Driver", "C:\\Users\\ritak\\Downloads\\chromedriver\\chromedriver\\chromedriver.exe");
+		//Assertion - validation for an application. it is use to compare the actual result of 
+		//        				an application with the expected result.
+
+		System.setProperty("webdriver.chrome.Driver", "C:\\Users\\ritak\\Downloads\\chromedriver\\chromedriver\\chromedriver.exe");
 		ChromeDriver driver = new ChromeDriver();
 		driver.get("https://www.webdriveruniversity.com/Contact-Us/contactus.html");
 		String url = "https://www.webdriveruniversity.com/Contact-Us/contactus.html";
