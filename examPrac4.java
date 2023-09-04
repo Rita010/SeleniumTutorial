@@ -10,7 +10,7 @@ public class examPrac4 {
 
 	public static void main(String[] args) {
 		
-		System.setProperty("cromedriver.driver.driver", "C:\\Users\\ritak\\Downloads\\chromedriver\\chromedriver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\ritak\\Downloads\\chromedriver\\chromedriver\\chromedriver.exe");
 		ChromeDriver driver = new ChromeDriver();
 		driver.get("https://www.webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html");
 		String url = "https://www.webdriveruniversity.com/Dropdown-Checkboxes-RadioButtons/index.html"; 

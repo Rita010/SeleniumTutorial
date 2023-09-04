@@ -13,7 +13,7 @@ public class examPrac1 {
 		//Assertion - validation for an application. it is use to compare the actual result of 
 		//        				an application with the expected result.
 
-		System.setProperty("webdriver.chrome.Driver", "C:\\Users\\ritak\\Downloads\\chromedriver\\chromedriver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\ritak\\Downloads\\chromedriver\\chromedriver\\chromedriver.exe");
 		ChromeDriver driver = new ChromeDriver();
 		driver.get("https://www.webdriveruniversity.com/Contact-Us/contactus.html");
 		String url = "https://www.webdriveruniversity.com/Contact-Us/contactus.html";

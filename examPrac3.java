@@ -16,7 +16,7 @@ public class examPrac3 {
 		// driver.getPageSorce()
 		
 	WebDriverWait wait = null;
-		System.setProperty("Chromedriver.driver.driver", "C:\\Users\\ritak\\Downloads\\chromedriver\\chromedriver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\ritak\\Downloads\\chromedriver\\chromedriver\\chromedriver.exe");
 		ChromeDriver driver = new ChromeDriver();
 		driver.get("https://www.webdriveruniversity.com/Contact-Us/contactus.html");
 		String url = "https://www.webdriveruniversity.com/Contact-Us/contactus.html";

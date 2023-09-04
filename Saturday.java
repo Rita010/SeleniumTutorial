@@ -5,14 +5,14 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class SaturdayPractice {
+public class Saturday {
 
 	public static void main(String[] args) {
 		//the path of driver(Key, Value)
 		System.setProperty("webdriver.chrome.driver","C:\\Users\\ritak\\Downloads\\chromedriver\\chromedriver\\chromedriver.exe");
 		
 		//WebDriver is interface, ChromeDriver is class, driver is object
-		WebDriver driver = new ChromeDriver();
+		ChromeDriver driver = new ChromeDriver();
 		//maxi & mini browser
 	//	driver.manage().window().maximize();
 		//driver.manage().window().minimize();

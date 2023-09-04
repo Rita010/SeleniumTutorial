@@ -4,11 +4,11 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
-public class examPrac2 {
+public class SatrudayPrac2 {
 
 	public static void main(String[] args) {
 		
-		System.setProperty("ChromeDriver.Driver.Driver", "C:\\Users\\ritak\\Downloads\\chromedriver\\chromedriver\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "C:\\Users\\ritak\\Downloads\\chromedriver\\chromedriver\\chromedriver.exe");
 		ChromeDriver driver = new ChromeDriver();
 		driver.get("https://www.webdriveruniversity.com/Contact-Us/contactus.html");
 		String url = "https://www.webdriveruniversity.com/Contact-Us/contactus.html";
