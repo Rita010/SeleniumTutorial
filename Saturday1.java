@@ -1,4 +1,4 @@
-package seleniumTutorial;
+package seleniumTutorialQ;
 
 import java.util.List;
 

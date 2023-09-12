@@ -1,4 +1,4 @@
-package seleniumTutorial;
+package seleniumTutorialQ;
 
 import org.asynchttpclient.util.Assertions;
 import org.openqa.selenium.By;

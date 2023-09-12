@@ -1,6 +1,7 @@
-package seleniumTutorial;
+package seleniumTutorialQ;
 
 import java.util.List;
+
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -63,7 +64,7 @@ public class Day6 {
 		
 		
 		// Xpath
-		// --- //tagName[@attribute='value']
+		// --- //tagName[@attribute="value"]
 		
 		
 		

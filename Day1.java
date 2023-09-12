@@ -1,4 +1,4 @@
-package seleniumTutorial;
+package seleniumTutorialQ;
 
 import org.openqa.selenium.chrome.ChromeDriver;
 
