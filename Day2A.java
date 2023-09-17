@@ -65,6 +65,7 @@ public class Day2A {
 		
 		String text = heading.getText();
 		System.out.println(text);
+	
 		
 		
 		

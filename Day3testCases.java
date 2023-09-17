@@ -55,7 +55,7 @@ System.setProperty("webdriver.chrome.driver", "C:\\Users\\ritak\\Downloads\\chro
 	// anyAttribute
 	
 	// finding element by any attribute
-	// tagName[attribute ="value"]
+	// tagName[attribute ='value']
 		
 	WebElement headThreeD = driver.findElement(By.cssSelector("h2[name=\"contactme\"]"));
 		String q3 = headThreeD.getText();

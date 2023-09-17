@@ -26,11 +26,12 @@ public class Day1A {
 		
 		WebElement Login = driver.findElement(By.cssSelector("#login-button"));
 		
-		
+		// Dash board element
 		UserName.sendKeys("standard_user");
 		Password.sendKeys("secret_sauce");
 		Login.click();
-		
+
+		// Assertion
 		WebElement heading = driver.findElement(By.cssSelector("#header_container > div.header_secondary_container > span "));
 		
 		if(heading.isDisplayed()) {
