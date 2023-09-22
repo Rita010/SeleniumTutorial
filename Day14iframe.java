@@ -15,12 +15,12 @@ public class Day14iframe {
 		// visiting the url
 		driver.get("https://www.webdriveruniversity.com/IFrame/index.html");	
 		
-		// iframe
+		// iframe  ------   writing test case to validate "Home"element
 		
 		//	WebElement ele = driver.findElement(By.cssSelector("#iframe"));
 		//	driver.switchTo().frame(ele);
 		
-		//	Switch to iframe by index 
+		//	Switch to iframe by index                       
 		driver.switchTo().frame(0);                     
 		WebElement ele2 = driver.findElement(By.cssSelector("#div-main-nav > div > ul > li.active > a"));  // ele of Home
 		System.out.println(ele2.isDisplayed());
@@ -42,7 +42,7 @@ public class Day14iframe {
 		// closing the browser
 		driver.close();
 		
-		//iframe // shadow DOM
+		//iframe // shadow DOM(Document Object Model)
 		
 		
 	}
