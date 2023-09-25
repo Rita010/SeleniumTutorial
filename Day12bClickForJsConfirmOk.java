@@ -17,7 +17,7 @@ public class Day12bClickForJsConfirmOk {
 		// visiting the URL
 		driver.get("https://the-internet.herokuapp.com/javascript_alerts");
 		
-		WebElement ele = driver.findElement(By.id("result"));
+		WebElement ele = driver.findElement(By.id("result"));  
 		
 		driver.findElement(By.cssSelector("#content > div > ul > li:nth-child(2) > button")).click();
 		String text = driver.switchTo().alert().getText();

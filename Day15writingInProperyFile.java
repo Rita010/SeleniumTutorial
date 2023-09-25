@@ -27,9 +27,9 @@ public class Day15writingInProperyFile {
 			String un = prop.getProperty("username");
 			String pd = prop.getProperty("password");
 			
-			// writing to the file
+			// writing to the file (not to write line 32 to 37)
 			
-			prop.put("city", "pune");
+			prop.put("city", "Glendale");
 			FileOutputStream outputStream = new FileOutputStream(path);
 			
 			// Storing the properties file

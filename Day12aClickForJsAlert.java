@@ -15,10 +15,10 @@ public class Day12aClickForJsAlert {
 		
 		// Test Case 1
 		
-		// visiting the URL
+		// visiting the URL   
 		driver.get("https://the-internet.herokuapp.com/javascript_alerts");
 		
-		WebElement ele = driver.findElement(By.id("result"));
+		WebElement ele = driver.findElement(By.id("result"));    
 		
 		// finding the element and clicking on it
 		driver.findElement(By.cssSelector("#content > div > ul > li:nth-child(1) > button")).click();

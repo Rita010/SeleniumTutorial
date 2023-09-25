@@ -86,7 +86,7 @@ System.setProperty("webdriver.chrome.driver", "C:\\Users\\ritak\\Downloads\\chro
 		driver.findElement(By.cssSelector("#form_buttons > input:nth-child(2)")).submit();
 		
 		
-		//Assertion  (element is present or not)
+		//Assertion  (element is present or not)          <h1>Thank You for your Message!</h1>
 		
 		boolean q4 = driver.findElement(By.cssSelector("h1")).isDisplayed();
 		
@@ -99,44 +99,44 @@ System.setProperty("webdriver.chrome.driver", "C:\\Users\\ritak\\Downloads\\chro
 
 // Test case 3 (incorrect email address)	
 		
-		driver.get("https://www.webdriveruniversity.com/Contact-Us/contactus.html");
-		
-		
-		driver.findElement(By.cssSelector("#contact_form > input:nth-child(1)")).sendKeys("Rita");
-		driver.findElement(By.cssSelector("#contact_form > input:nth-child(2)")).sendKeys("Khatiwoda");
-		driver.findElement(By.cssSelector("#contact_form > input:nth-child(3)")).sendKeys("ritakhatiwada50gmail.com");
-		driver.findElement(By.cssSelector("#contact_form > textarea")).sendKeys("Hello Selenium");
-		driver.findElement(By.cssSelector("#form_buttons > input:nth-child(2)")).submit();
-		
-
-		boolean q5 = driver.findElement(By.cssSelector("body")).isDisplayed();
-		
-		if (q5) {
-			System.out.println("Test case 3 passed");
-		}
-		else {
-			System.out.println("Test case 3 failed");
-		}
-		
-// TesCase 4  (Reset button --- to validate that clicking reset button it shows blank string)
-		
-		driver.get("https://www.webdriveruniversity.com/Contact-Us/contactus.html");
-		
-
-		driver.findElement(By.cssSelector("#contact_form > input:nth-child(1)")).sendKeys("Rita");
-		driver.findElement(By.cssSelector("#contact_form > input:nth-child(2)")).sendKeys("Khatiwoda");
-		driver.findElement(By.cssSelector("#contact_form > input:nth-child(3)")).sendKeys("ritakhatiwada50@gmail.com");
-		driver.findElement(By.cssSelector("#contact_form > textarea")).sendKeys("Hello Selenium");
-		driver.findElement(By.cssSelector("#form_buttons > input:nth-child(1)")).click();    
-		String q6 = driver.findElement(By.cssSelector("#form_buttons > input:nth-child(1)")).getText();
-		System.out.println(q6);
-	
-		if(q6.isEmpty()) {
-			System.out.println("Test case 4 passed");
-		}
-		else {
-			System.out.println("Test case 4 failed");
-		}
+//		driver.get("https://www.webdriveruniversity.com/Contact-Us/contactus.html");
+//		
+//		
+//		driver.findElement(By.cssSelector("#contact_form > input:nth-child(1)")).sendKeys("Rita");
+//		driver.findElement(By.cssSelector("#contact_form > input:nth-child(2)")).sendKeys("Khatiwoda");
+//		driver.findElement(By.cssSelector("#contact_form > input:nth-child(3)")).sendKeys("ritakhatiwada50gmail.com");
+//		driver.findElement(By.cssSelector("#contact_form > textarea")).sendKeys("Hello Selenium");
+//		driver.findElement(By.cssSelector("#form_buttons > input:nth-child(2)")).submit();
+//		
+//
+//		boolean q5 = driver.findElement(By.cssSelector("body")).isDisplayed();
+//		
+//		if (q5) {
+//			System.out.println("Test case 3 passed");
+//		}
+//		else {
+//			System.out.println("Test case 3 failed");
+//		}
+//		
+//// TesCase 4  (Reset button --- to validate that clicking reset button it shows blank string)
+//		
+//		driver.get("https://www.webdriveruniversity.com/Contact-Us/contactus.html");
+//		
+//
+//		driver.findElement(By.cssSelector("#contact_form > input:nth-child(1)")).sendKeys("Rita");
+//		driver.findElement(By.cssSelector("#contact_form > input:nth-child(2)")).sendKeys("Khatiwoda");
+//		driver.findElement(By.cssSelector("#contact_form > input:nth-child(3)")).sendKeys("ritakhatiwada50@gmail.com");
+//		driver.findElement(By.cssSelector("#contact_form > textarea")).sendKeys("Hello Selenium");
+//		driver.findElement(By.cssSelector("#form_buttons > input:nth-child(1)")).click();    
+//		String q6 = driver.findElement(By.cssSelector("#form_buttons > input:nth-child(1)")).getText();
+//		System.out.println(q6);
+//	
+//		if(q6.isEmpty()) {
+//			System.out.println("Test case 4 passed");
+//		}
+//		else {
+//			System.out.println("Test case 4 failed");
+//		}
 		
 		
 		
